@@ -13,9 +13,9 @@ end
 
 def long_planeteer_calls(calls_array)
 
-  if calls_array.any? { |word| word.length > 4} == true
+  if calls_array.any? { |word| word.length > 4} 
 
-  else call_array.all? { |word| word.length >= 4} == false
+  else call_array.all? { |word| word.length >= 4}
     
   end
 # else calls_array.all? { |word| word.length > 4 }
