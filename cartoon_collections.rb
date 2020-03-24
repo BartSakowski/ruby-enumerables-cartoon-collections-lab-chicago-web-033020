@@ -33,12 +33,11 @@ def find_the_cheese(food_array)
 
     return nil
   end
-  
+
 
   # else food_array.include?(cheese_types) == false
   #
   #   return nil
 
-  end
 
 end
