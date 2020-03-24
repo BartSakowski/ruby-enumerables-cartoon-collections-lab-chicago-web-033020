@@ -28,10 +28,10 @@ def find_the_cheese(array)
   while counter < array.length do
     if cheese_types.detect (array[counter])
       return array[counter]
-      ndex += 1
+      counter += 1
     else
       nil
     end
   end
-  
+
 end
