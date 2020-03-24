@@ -20,20 +20,14 @@ def long_planeteer_calls(calls_array)
   else calls_array.any? { |word| word.length > 4} == false
     return false
   end
-
 end
-require 'pry'
 
 def find_the_cheese(food_array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-
   if food_array.include?(cheese_types) == true
-    binding.pry
     return food_array.find {|food| food.cheese_types?}
-
   else food_array.include?(cheese_types) == false
     return nil
-    binding.pry
   end
 
 end
