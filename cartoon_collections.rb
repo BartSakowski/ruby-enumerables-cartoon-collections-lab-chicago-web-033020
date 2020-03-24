@@ -29,9 +29,10 @@ def find_the_cheese(food_array)
 
   if food_array.include?(cheese_types) == true
     return food_array.find {|food| food.cheese_types?}
-    binding.pry
+
   else food_array.include?(cheese_types) == false
     return nil
+    binding.pry
   end
 
 end
