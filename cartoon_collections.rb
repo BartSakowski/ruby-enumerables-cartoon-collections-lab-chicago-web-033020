@@ -27,7 +27,7 @@ def find_the_cheese(food_array)
 
 
   if food_array.include?(cheese_types) == true
-    return food_array.find { |food| puts food; food == cheese_types}
+    return cheese_types
 
   else
     return nil
