@@ -22,16 +22,16 @@ def long_planeteer_calls(calls_array)
   end
 end
 
-def find_the_cheese(array)
+def find_the_cheese(food_array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   counter = 0
-  while counter < array.length do
-    if cheese_types.detect (array[counter])
-      return array[counter]
+  while counter < food_array.length do
+    if cheese_types.detect (food_array[counter])
+      return food_array[counter]
       counter += 1
     else
       nil
     end
   end
-
+  
 end
