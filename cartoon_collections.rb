@@ -1,3 +1,5 @@
+require 'pry'
+
 def roll_call_dwarves(dwarves_array) # code an argument here
 
   dwarves_array.each_with_index { |item, index| p "#{index+1}." "#{item}" }
@@ -27,6 +29,7 @@ def find_the_cheese(food_array)
 
   if food_array.include?(cheese_types) == true
     return food_array.find {|food| food.cheese_types?}
+    binding.pry
   else food_array.include?(cheese_types) == false
     return nil
   end
