@@ -22,15 +22,15 @@ def long_planeteer_calls(calls_array)
   end
 end
 
-def find_the_cheese(array)
+def find_the_cheese(food_array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  index = 0
-  while index < array.length do
-    if cheese_types.detect (array[index])
-      return array[index]
-    else
-      index += 1
+
+  if food_array.include?(cheese_types) == true
+    food_array.find do |food|
+      food.cheese_types?
     end
+  else
+    return nil
   end
-  nil
+
 end
