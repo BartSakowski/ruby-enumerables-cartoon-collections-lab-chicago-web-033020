@@ -24,10 +24,13 @@ end
 
 def find_the_cheese(food_array)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  cheese_snack = food_array.find { |food| food.cheese_types?}
 
-food_array.include?(cheese_types) == true
-
-
+  if food_array.include?(cheese_types) == true
+    return cheese_snack
+  else
+    return nil
+  end
 
 
   # else food_array.include?(cheese_types) == false
