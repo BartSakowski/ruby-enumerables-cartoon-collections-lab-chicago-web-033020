@@ -1,4 +1,4 @@
-require 'pry'
+
 
 def roll_call_dwarves(dwarves_array) # code an argument here
 
@@ -22,7 +22,7 @@ def long_planeteer_calls(calls_array)
   end
 
 end
-
+require 'pry'
 
 def find_the_cheese(food_array)
   cheese_types = ["cheddar", "gouda", "camembert"]
