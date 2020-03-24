@@ -27,7 +27,7 @@ def find_the_cheese(food_array)
 
 
   if food_array.include?(cheese_types) == true
-    chee = food_array.detect { |food| food.cheese_types?}
+    chee = food_array.find { |food| puts food; food == cheddar}
     return chee
   else
     return nil
