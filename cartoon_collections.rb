@@ -30,7 +30,7 @@ def find_the_cheese(array)
       return array[counter]
     else
       index += 1
-    
+    end
   end
   nil
 end
