@@ -26,12 +26,12 @@ def find_the_cheese(food_array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   counter = 0
   while counter < food_array.length do
-    if cheese_types.detect (food_array[counter])
+    if cheese_types.include (food_array[counter])
       return food_array[counter]
       counter += 1
     else
       nil
     end
   end
-  
+
 end
